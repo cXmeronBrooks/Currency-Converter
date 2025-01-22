@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="static/js/script.js"></script>
+</head>
+<body>
+<div id="key">
+    <h2>USD</h2>
+    <img src = "static/images/usd.png">
+    <h2>AUD</h2>
+    <img src = "static/images/aud.png">
+    <h2>BTC</h2>
+    <img src = "static/images/bitcoin.png">
+    <h2>ETH</h2>
+    <img src = "static/images/ETH.png">
+    <h2>EUR</h2>
+    <img src = "static/images/eur.png">
+</div>
+<div id="currencyconverter">
+    <h2>Convert...</h2>
+    <select name="Currency1" id = "Currency1">
+        <option value = "USD">USD</option>
+        <option value = "AUD">AUD</option>
+        <option value = "BTC">BTC</option>
+        <option value = "ETH">ETH</option>
+        <option value = "EUR">EUR</option>
+    </select>
+    <input type = "text" id = "currency1val">
+    <h2>To:</h2>
+    <select name="Currency2" id = "Currency2">
+        <option value = "AUD">AUD</option>
+        <option value = "USD">USD</option>
+        <option value = "BTC">BTC</option>
+        <option value = "ETH">ETH</option>
+        <option value = "EUR">EUR</option>
+    </select>
+    <button type = "button" onclick = "findRightFun()">Convert</button>
+    <h2 id = "currency2val">0</h2>
+</div>
+</body>
+</html>
